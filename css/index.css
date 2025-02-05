@@ -1,0 +1,1007 @@
+/* GLOBAL*/
+html
+{
+    scroll-behavior: smooth;
+}
+* , *::after , *::before
+{
+    box-sizing: border-box;
+}
+body , html
+{
+    margin: 0;
+    background-color: #fff !important;
+    overflow-x: hidden;
+}
+img
+{
+    width: 100%;
+    display: block;
+}
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+:root
+{
+    --hover-red-color:#E7637B;
+    --Montserrat-font:"Montserrat", sans-serif ;
+    --Nunito-font:"Nunito", sans-serif ;
+    --big-text-color:rgb(209, 205, 199) ;
+    --min-text-color:rgb(158, 150, 137);
+    --main-text-color:rgb(232, 230, 227);
+    --dark-red-color:#8C162C;
+    --avrage-dark-color-buttons:#89283A ;
+}
+.btns-bg-color
+{
+    color: var(--avrage-dark-color-buttons);
+}
+h1 , h2 , h3 , h4 , h5 , h6
+{
+    font-family: var(--Montserrat-font);
+} 
+body
+{
+    font-family: var(--Nunito-font);
+}
+.hover-color-light-red
+{
+    color: var(--hover-red-color);
+}
+.h-txt-color
+{
+    color: var(--big-text-color);
+}
+.p-txt-color
+{
+    color: var(--min-text-color);
+}
+.main-txt-color
+{
+    color: var(--main-text-color);
+}
+/* END-GLOBAL*/
+/* <!--==================================NAV-SECTION==================================--> */
+a.navbar-brand
+{
+    color: var(--main-text-color)  !important;
+    font-weight: 700 !important;
+    font-size: 2.5rem !important;
+    line-height: 2rem !important;
+    font-family: var(--Nunito-font) !important;
+}
+a.nav-link
+{
+    color: rgb(232, 230, 227) !important;
+    font-weight: 400 !important;
+    font-size: 1rem !important; 
+    line-height: 1.5rem !important; 
+    font-family: var(--Montserrat-font) !important;
+}
+li.nav-item:hover a.nav-link 
+{
+    color: var(--hover-red-color) !important;
+}
+nav.navbar
+{
+    background-color: #181A1B !important;
+}
+section.main-nav nav.navbar div.collapse ul.navbar-nav li.nav-item a.nav-link.active
+{
+    color: var(--hover-red-color) !important;
+}
+section.main-nav nav.navbar div.collapse ul.navbar-nav li.nav-item a.nav-link.active::after
+{
+    content: '';
+    width: 80%;
+    height: 0.125rem;
+    background-color: var(--dark-red-color);
+    position: absolute;
+    left: 12%;
+    bottom: 10%;
+}
+a.hover-nav::after
+{
+    content: '';
+    width: 0;
+    height: 0.125rem;
+    background-color: var(--dark-red-color);
+    position: absolute;
+    left: 12%;
+    bottom: 10%;
+    transition: width ease-in-out 0.5s;
+}
+li.for-hover-nav:hover a.hover-nav::after
+{
+    width: 80%;
+}
+/* <!--==================================END-NAV-SECTION==================================--> */
+
+/* <!--==================================HOME-SECTION==================================--> */
+section.background-image
+{
+    background-image:linear-gradient(rgba(0 , 0 , 0 , 0.8) , rgba(0 , 0 , 0 , 0.8)) , url(../images/header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+h3.main-txt-color.edit-h3
+{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+h1.main-txt-color.edit-h1
+{
+    font-size: 4.25rem;
+    line-height: 5.125rem;
+}
+h1.main-txt-color.edit-h1::after
+{
+    content: '';
+    border: solid 0.125rem rgb(66, 66, 66);
+}
+h1.main-txt-color.edit-h1::before
+{
+    content: '';
+    animation-name: word;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes word {
+    0% {
+        content: "";
+    }
+    0.93% {
+        content: "I";
+    }
+    1.86% {
+        content: "I'";
+    }
+    2.79% {
+        content: "I'M";
+    }
+    3.72% {
+        content: "I'M ";
+    }
+    4.65% {
+        content: "I'M K";
+    }
+    5.58% {
+        content: "I'M Ke";
+    }
+    6.51% {
+        content: "I'M Ker";
+    }
+    7.44% {
+        content: "I'M Kerr";
+    }
+    8.37% {
+        content: "I'M Kerri";
+    }
+    9.30% {
+        content: "I'M Kerri ";
+    }
+    10.23% {
+        content: "I'M Kerri D";
+    }
+    11.16% {
+        content: "I'M Kerri De";
+    }
+    12.09% {
+        content: "I'M Kerri Deo.";
+    }
+    13.02% {
+        content: "I'M Kerri Deo";
+    }
+    13.95% {
+        content: "I'M Kerri De";
+    }
+    14.88% {
+        content: "I'M Kerri D";
+    }
+    15.81% {
+        content: "I'M Kerri";
+    }
+    16.74% {
+        content: "I'M Kerr";
+    }
+    17.67% {
+        content: "I'M Ker";
+    }
+    18.60% {
+        content: "I'M Ke";
+    }
+    19.53% {
+        content: "I'M K";
+    }
+    20.46% {
+        content: "I'M ";
+    }
+    21.39% {
+        content: "I'M";
+    }
+    22.32% {
+        content: "I'";
+    }
+    23.25% {
+        content: "I";
+    }
+    24.18% {
+        content: "";
+    }
+    25.11% {
+        content: "I";
+    }
+    26.04% {
+        content: "I'";
+    }
+    26.97% {
+        content: "I'M ";
+    }
+    27.90% {
+        content: "I'M a";
+    }
+    28.83% {
+        content: "I'M a G";
+    }
+    29.76% {
+        content: "I'M a Gr";
+    }
+    30.69% {
+        content: "I'M a Gra";
+    }
+    31.62% {
+        content: "I'M a Grap";
+    }
+    32.55% {
+        content: "I'M a Graph";
+    }
+    33.48% {
+        content: "I'M a Graphi";
+    }
+    34.41% {
+        content: "I'M a Graphic";
+    }
+    35.34% {
+        content: "I'M a Graphic ";
+    }
+    36.27% {
+        content: "I'M a Graphic D";
+    }
+    37.20% {
+        content: "I'M a Graphic De";
+    }
+    38.13% {
+        content: "I'M a Graphic Des";
+    }
+    39.06% {
+        content: "I'M a Graphic Desi";
+    }
+    39.99% {
+        content: "I'M a Graphic Desig";
+    }
+    40.92% {
+        content: "I'M a Graphic Design";
+    }
+    41.85% {
+        content: "I'M a Graphic Designe";
+    }
+    42.78% {
+        content: "I'M a Graphic Designer.";
+    }
+    43.71% {
+        content: "I'M a Graphic Designer";
+    }
+    44.64% {
+        content: "I'M a Graphic Designe";
+    }
+    45.57% {
+        content: "I'M a Graphic Design";
+    }
+    46.50% {
+        content: "I'M a Graphic Desig";
+    }
+    47.43% {
+        content: "I'M a Graphic Desi";
+    }
+    48.36% {
+        content: "I'M a Graphic Des";
+    }
+    49.29% {
+        content: "I'M a Graphic De";
+    }
+    50.22% {
+        content: "I'M a Graphic D";
+    }
+    51.15% {
+        content: "I'M a Graphic ";
+    }
+    52.08% {
+        content: "I'M a Graphic";
+    }
+    53.01% {
+        content: "I'M a Graphi";
+    }
+    53.94% {
+        content: "I'M a Graph";
+    }
+    54.87% {
+        content: "I'M a Grap";
+    }
+    55.80% {
+        content: "I'M a Gra";
+    }
+    56.73% {
+        content: "I'M a Gr";
+    }
+    57.66% {
+        content: "I'M a G";
+    }
+    58.59% {
+        content: "I'M a ";
+    }
+    59.52% {
+        content: "I'M a";
+    }
+    60.45% {
+        content: "I'M ";
+    }
+    61.38% {
+        content: "I'";
+    }
+    62.31% {
+        content: "I";
+    }
+    63.24% {
+        content: "";
+    }
+    64.17% {
+        content: "I";
+    }
+    65.10% {
+        content: "I'";
+    }
+    66.03% {
+        content: "I'M";
+    }
+    66.96% {
+        content: "I'M ";
+    }
+    67.89% {
+        content: "I'M a";
+    }
+    68.82% {
+        content: "I'M a Ph";
+    }
+    69.75% {
+        content: "I'M a Pho";
+    }
+    70.68% {
+        content: "I'M a Phot";
+    }
+    71.61% {
+        content: "I'M a Photo";
+    }
+    72.54% {
+        content: "I'M a Photog";
+    }
+    73.47% {
+        content: "I'M a Photogr";
+    }
+    74.40% {
+        content: "I'M a Photogra";
+    }
+    75.33% {
+        content: "I'M a Photograp";
+    }
+    76.26% {
+        content: "I'M a Photograph";
+    }
+    77.19% {
+        content: "I'M a Photographe";
+    }
+    78.12% {
+        content: "I'M a Photographer";
+    }
+    79.05% {
+        content: "I'M a Photographer.";
+    }
+    80.91% {
+        content: "I'M a Photographer";
+    }
+    81.84% {
+        content: "I'M a Photographe";
+    }
+    82.77% {
+        content: "I'M a Photograph";
+    }
+    83.70% {
+        content: "I'M a Photograp";
+    }
+    84.63% {
+        content: "I'M a Photogra";
+    }
+    85.56% {
+        content: "I'M a Photogr";
+    }
+    86.49% {
+        content: "I'M a Photog";
+    }
+    87.42% {
+        content: "I'M a Photo";
+    }
+    88.35% {
+        content: "I'M a Phot";
+    }
+    89.28% {
+        content: "I'M a Pho";
+    }
+    90.21% {
+        content: "I'M a Ph";
+    }
+    91.14% {
+        content: "I'M a P";
+    }
+    92.07% {
+        content: "I'M a";
+    }
+    93% {
+        content: "I'M ";
+    }
+    93.93%
+    {
+        content: "I'M";
+    }
+    94.86%
+    {
+        content: "I'";
+    }
+    95.79%
+    {
+        content: "I";
+    }
+    96.72%
+    {
+        content: "";
+    }
+    100%
+    {
+        content: "";
+    }
+}
+
+button.btn.btn.btn-outline-secondary.rounded-pill
+{
+    transition: background-color ease-in-out 0.3s !important;
+    color: var(--main-text-color);
+}
+button.btn.btn.btn-outline-secondary.rounded-pill:hover
+{
+    background-color: #181A1B ;
+}
+p.p-txt-color.edit-p
+{
+    line-height: 1.5rem;
+}
+button.fillped-btn
+{
+    width: 30px;
+    height: 50px;
+    border-radius: 50rem;
+    background-color: transparent;
+    color: var(--big-text-color);
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border: solid 1px var(--min-text-color);
+}
+@keyframes shake 
+{
+    0%
+    {
+        transform: translateY(10%);
+    }
+    25%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(15%);
+    }
+    75%
+    {
+        transform: translateY(0%);
+    }
+    100%
+    {
+        transform: translateY(10%);
+    }
+}
+a[href="#ABOUT"].edit-position
+{
+    position: absolute;
+    bottom: 5% ;
+}
+div.for-edit-gear-icon
+{
+    position: fixed;
+    left: 0;
+    top: 20%;
+    transform: translateY(-50%);
+    background-color: #181A1B !important;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid var(--big-text-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* <!--==================================END-HOME-SECTION================================== --> */
+
+/* <!--==================================ABOUT-SECTION==================================  --> */
+section.main-about-section
+{
+    padding-top: 8.75rem;
+    padding-bottom: 7.5rem;
+}
+h2.edit-h2-innercol
+{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 3.625rem;
+}
+h4.edit-h4-innercol
+{
+    font-weight: 500;
+    font-size: 2.1875rem;
+    line-height: 2.5625rem;
+}
+.edit-p-font
+{
+    font-family: var(--Montserrat-font) !important;
+}
+a.edit-cir-a
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid var(--min-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border ease-in-out 0.5s;
+}
+i.hover-ics
+{
+    transition: color ease-in-out 0.5s;
+}
+a.edit-cir-a:hover .hover-ics
+{
+    color: var(--hover-red-color);
+}
+a.edit-cir-a:hover
+{
+    border: 2px solid var(--dark-red-color);
+}
+ul.edit-width-ul
+{
+    width: 30%;
+}
+/* <!--==================================END-ABOUT-SECTION==================================  --> */
+
+/* <!--==================================SERVICE-SECTION==================================  --> */
+span.edit-txt-serv , h2.edit-txt-our
+{
+    font-weight: 600;
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+    color: var(--big-text-color);
+}
+h2.edit-txt-our
+{
+    font-weight: 500 !important;
+    color: var(--main-text-color);
+    
+}
+i.resize-ics-big
+{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3rem;
+}
+section.main-services-section
+{
+    background-color: #1B1E1F;
+    padding-top: 6.875rem;
+    padding-bottom: 4.5rem;
+}
+p.for-padd
+{
+    padding-bottom: 2.1875rem;
+}
+h5.after-effect::after
+{
+    content: '';
+    width: 12.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -75%;
+    height: 3px;
+    background-color: var(--avrage-dark-color-buttons);
+    position: absolute;
+    transition: width ease-in-out 0.5s;
+}
+div.for-hover:hover .after-effect::after
+{
+    width: 17.5%;
+}
+p.fixed-padding
+{
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+/* <!--==================================SERVICE-SECTION==================================  --> */
+
+/* <!--==================================HIRE-SECTION==================================--> */
+section.main-section-hire
+{
+    background-color: #181A1B !important;
+}
+h2.edit-txt-h2
+{
+    font-weight: 600;
+    font-size: 2.3125rem;
+    line-height: 2.75rem;
+    color: var(--big-text-color);
+    padding-top: 3.5rem;
+}
+div.fixed-button
+{
+    height: 3.3125rem;
+    width: 9rem;
+    background-color: var(--avrage-dark-color-buttons);
+    color: var(--main-text-color);
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 500;
+    transition: background-color ease-in-out 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-bottom: 6rem;
+    margin-top: 1.25rem;
+}
+div.fixed-button:hover
+{
+    color: var(--main-text-color);
+    background-color: var(--dark-red-color);
+}
+/* <!--==================================END-HIRE-SECTION==================================--> */
+
+/* <!--==================================CLIENTS-SECTION==================================--> */
+
+/* <!--==================================END-CLIENTS-SECTION==================================--> */
+
+/* <!--==================================PORTFOLIO-SECTION==================================--> */
+h2.txt-our-port
+{
+    font-weight: 500;
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+    color: var(--big-text-color);
+    padding-top: 6.5625rem;
+    padding-bottom: 0.625rem;
+
+}
+.edit-padd-p
+{
+    padding-bottom: 0.75rem;
+}
+span.txt-work-port
+{
+    font-weight: 600;
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+    color: var(--big-text-color);
+}
+ul.nav-pills#pills-tab.padd-me
+{
+    padding-bottom: 2rem;
+}
+.edited-padd-row1
+{
+    padding-bottom: 9.125rem;
+}
+button.edit-pill-button
+{
+    width:3.75rem;
+    height: 1.875rem;
+    border-radius: 50rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700 !important;
+    font-family: var(--Nunito-font) !important;
+    font-size: 0.875rem !important;
+    color: var(--main-text-color) !important;
+    line-height: 1.3125rem;
+    transition: background-color ease-in-out 0.5s;
+}
+button.edit-pill-button:focus
+{
+    background-color: var(--dark-red-color) !important;
+}
+button.spcial-btn
+{
+    width:6.75rem;
+    height: 1.875rem;
+    border-radius: 50rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700 !important;
+    font-family: var(--Nunito-font) !important;
+    font-size: 0.875rem !important;
+    color: var(--main-text-color) !important;
+    line-height: 1.3125rem;
+    transition: background-color ease-in-out 0.5s;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link
+{
+    background-color: var(--dark-red-color) !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: var(--dark-red-color) !important;
+}
+button.spcial-btn:focus
+{
+    background-color: var(--dark-red-color) !important;
+}
+.edited-txt-inner
+{
+    color: var(--main-text-color);
+    font-family: var(--Montserrat-font);
+}
+.edit-h4-inner
+{
+    font-weight: 500;
+    line-height: 1.8125rem;
+    font-size: 1.5rem;
+    font-family: var(--Montserrat-font);
+}
+.main-section-port
+{
+    background-color: #1a1a19cc !important;
+}
+.content-inner-image
+{
+    position: absolute ; 
+    top: 0% ;
+    background-image: linear-gradient(rgba(0 ,0 , 0 , 0.7) , rgba(0 , 0 , 0 ,0.7));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out 1s;
+}
+.main-inner:hover .content-inner-image
+{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+}
+.main-inner
+{
+    overflow-y: hidden;
+}
+.for-anmie
+{
+    animation-name: zoom;
+    animation-iteration-count: 1;
+    animation-duration: 1.25s;
+}
+@keyframes zoom 
+{
+    0%
+    {
+        transform: scale(0);
+    }    
+    100%
+    {
+        transform: scale(1);
+    }
+}
+/* <!--==================================END-PORTFOLIO-SECTION==================================--> */
+
+/* <!--==================================BLOG-SECTION==================================--> */
+a.edited-link-blog-st
+{
+    color: var(--big-text-color);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-family: var(--Montserrat-font);
+}
+.fw-800
+{
+    font-weight: 800;
+}
+p.edit-para-blog
+{
+    font-family: var(--Montserrat-font);
+    font-weight: 400;
+    color: var(--min-text-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.fw-700
+{
+    font-weight: 700;
+    font-family: var(--Montserrat-font);
+    color: var(--min-text-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.bg-dark-color
+{
+    background-color: #181A1B;
+}
+header.padd-up-blog
+{
+    padding-top: 6.25rem;
+    padding-bottom: 2.8125rem;
+}
+.padd-after-blog
+{
+    padding-bottom: 0.75rem;
+}
+.padd-after-row
+{
+    padding-bottom: 6.25rem;
+}
+/* <!--==================================END-BLOG-SECTION==================================--> */
+
+/* <!--==================================CONTACTUS-SECTION==================================--> */ 
+.main-section-contact
+{
+    background-color: #1B1E1F;
+}
+i.edit-ics-contact
+{
+    font-size:3rem;
+    line-height: 3rem;
+    color: var(--hover-red-color);
+    font-weight: 900;
+}
+p.details-contact
+{
+    font-weight: 300;
+    color: var(--min-text-color);
+}
+h5.descrip-way
+{
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    color: var(--big-text-color);
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+span.contact-txt
+{
+    font-weight: 600;
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+    color: var(--big-text-color);
+}
+h2.title-contact
+{
+    font-weight: 500;
+    font-size: 2.8125rem;
+    line-height: 3.375rem;
+    color: var(--big-text-color);
+    padding-top: 6.6875rem;
+    padding-bottom: 0.25rem;
+}
+textarea.fixed-padding-textarea
+{
+    padding-bottom: 4.6875rem;
+    resize: none;
+}
+div.fake-button
+{
+    height: 3.375rem;
+    width: 10rem;
+    background-color: var(--avrage-dark-color-buttons);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color ease-in-out 0.5s;
+}
+div.fake-button:hover
+{
+    background-color: var(--dark-red-color);
+}
+input.form-control , textarea.fixed-padding-textarea
+{
+    transition: border-color ease-in-out 0.5s , box-shadow ease-in-out 0.5s;
+    border: 2px solid rgba(128, 128, 128, 0.651);
+}
+input.form-control:focus , textarea.fixed-padding-textarea:focus
+{
+    border-color: var(--dark-red-color); 
+    box-shadow: 0 0 5px var(--hover-red-color); 
+}
+.txt-inner-fake-button
+{
+    font-family: var(--Montserrat-font);
+    color: var(--main-text-color);
+}
+.descrip-contact
+{
+    padding-bottom: 2.125rem;
+}
+.padd-contact-ways
+{
+    padding-bottom: 1.75rem;
+}
+.parent-fake
+{
+    padding-bottom: 6.6875rem;
+}
+/* <!--==================================END-CONTACTUS-SECTION==================================--> */ 
+
+/* <!--==================================FOOTER-SECTION==================================--> */ 
+a.edit-cir-a-2
+{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A1C1D;
+}
+i.hover-ics
+{
+    transition: color ease-in-out 0.5s;
+}
+a.edit-cir-a-2:hover .hover-ics
+{
+    color: var(--hover-red-color);
+}
+ul.edit-width-ul-2
+{
+    width: 15%;
+}
+.edit-padd-footer
+{
+    padding-top: 4.5rem;
+}
+p.last-sentence
+{
+    padding-top: 1.5rem;
+    padding-bottom: 4.5rem;
+}
+/* <!--==================================END-FOOTER-SECTION==================================--> */ 
+
